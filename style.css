@@ -1,0 +1,249 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fafafa;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header,
+footer {
+  padding: 20px;
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay {
+  z-index: 999;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #aaaaaab0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-wrapper {
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  max-height: 60%;
+  border-radius: 5px;
+  background: white;
+}
+
+.timeout-bar {
+  margin-top: 10px;
+  width: 0%;
+  min-height: 10px;
+  background-color: #0f0a;
+}
+
+.details-header-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.details-content-wrapper {
+  padding: 10px;
+  border-radius: 5px;
+  background: #f3f3f3;
+}
+
+.details-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.default-button {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  font-weight: 700;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.apply {
+  background: #419873;
+}
+
+.close {
+  background: red;
+}
+
+.main-wrapper {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-wrapper {
+  max-width: 70%;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  column-gap: 10px;
+  row-gap: 40px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: white;
+  max-width: 250px;
+  box-shadow: 3px 3px 10px 1px #00000011;
+  transition: 0.3s;
+}
+
+.card-wrapper:hover {
+  box-shadow: 12px 12px 10px 1px #00000020;
+}
+
+.promoted-card {
+  min-height: 400px;
+}
+
+.regular-card {
+  min-height: 200px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    90deg,
+    rgba(33, 170, 235, 1) 0%,
+    rgba(70, 193, 241, 1) 100%
+  );
+  flex-basis: 50%;
+  border-radius: 5px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.fa-share-alt {
+  font-size: 0.8rem;
+  padding: 5px;
+}
+
+.icon-wrapper {
+  position: absolute;
+  align-self: flex-end;
+  color: white;
+  margin: 10px;
+}
+
+.alt {
+  color: black;
+}
+
+.big-icon-wrapper {
+  padding: 10px 0px 0px;
+  max-width: 60%;
+  flex-basis: 50%;
+  align-self: center;
+}
+
+.small-icon-wrapper {
+  padding: 0px 10px;
+}
+
+.label-wrapper {
+  align-self: center;
+  border-radius: 3px;
+  font-size: 1rem;
+  position: relative;
+  top: 8%;
+  min-width: 70%;
+  max-height: 33px;
+  text-align: center;
+}
+
+.hackathon-label {
+  background: linear-gradient(90deg, #fa759e 0%, #ff9fc0 100%);
+}
+
+.leap-label {
+  background: linear-gradient(90deg, #5a54e0 0%, #6a80ff 100%);
+}
+
+.mission-label {
+  background: linear-gradient(90deg, #32d492 0%, #88ee96 100%);
+}
+
+.meet-label {
+  background: linear-gradient(90deg, #ff9c34 0%, #ffbb88 100%);
+}
+
+.webinar-label {
+  background: linear-gradient(90deg, #1167b1 0%, #2a9df4 100%);
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.bottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 20px;
+}
+
+.title-wrapper {
+  padding: 5px 0px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.location-wrapper,
+.date-wrapper {
+  text-align: center;
+  padding: 5px 0px;
+  color: #3c3c3c;
+  font-size: 0.9rem;
+}
+
+.fa-map-marker-alt,
+.fa-calendar-alt {
+  padding-right: 10px;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
